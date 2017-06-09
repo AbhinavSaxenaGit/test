@@ -25,6 +25,7 @@ public class LandingPageTest extends SeleniumDriver
 		System.out.println("Method :: validateTitleOfWiki executed by thread "+Thread.currentThread().getId());
 	}
 	
+	@Test
 	public void validateTitleOfWikiWrong(){
 		SeleniumMethods obj = new SeleniumMethods(driver);
 		obj.openURL(ConfigReader.getConfig("url"));
