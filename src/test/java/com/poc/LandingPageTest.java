@@ -24,4 +24,11 @@ public class LandingPageTest extends SeleniumDriver
 		Assert.assertEquals(obj.getTitle(), LandingPage.title);
 		System.out.println("Method :: validateTitleOfWiki executed by thread "+Thread.currentThread().getId());
 	}
+	
+	public void validateTitleOfWikiWrong(){
+		SeleniumMethods obj = new SeleniumMethods(driver);
+		obj.openURL(ConfigReader.getConfig("url"));
+		Assert.assertEquals(obj.getTitle(), "Wikipedia");
+		System.out.println("Method :: validateTitleOfWiki executed by thread "+Thread.currentThread().getId());
+	}	
 }
