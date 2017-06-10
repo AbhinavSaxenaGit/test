@@ -13,7 +13,7 @@ public class LandingPageTest extends SeleniumDriver
     {
 		SeleniumMethods obj = new SeleniumMethods(driver);
 		obj.openURL(ConfigReader.getConfig("url"));
-		Assert.assertTrue(obj.isElementPresent(LandingPage.logo));
+		Assert.assertFalse(obj.isElementPresent(LandingPage.logo), "*****Falied*****");
 		System.out.println("Method :: validateHomePageOfWiki executed by thread "+Thread.currentThread().getId());		
     }
 	
