@@ -22,7 +22,7 @@ public class HomePageTest extends SeleniumDriver
 	public void validateTitleOfWiki(){
 		SeleniumMethods obj = new SeleniumMethods(driver);
 		obj.openURL(ConfigReader.getConfig("url"));
-		Assert.assertEquals(obj.getTitle(), HomePage.title);
+		Assert.assertEquals("actual", "expected");//(obj.getTitle(), HomePage.title);
 		System.out.println("Method :: validateTitleOfWiki executed by thread "+Thread.currentThread().getId());
 	}
 }
