@@ -8,7 +8,7 @@ public class LandingPageTest extends SeleniumDriver
 {
 	SeleniumMethods selObj = new SeleniumMethods(driver);
 	
-	@Test
+	//@Test
     public void validateHomePageOfWiki()
     {
 		SeleniumMethods obj = new SeleniumMethods(driver);
@@ -17,7 +17,7 @@ public class LandingPageTest extends SeleniumDriver
 		System.out.println("Method :: validateHomePageOfWiki executed by thread "+Thread.currentThread().getId());		
     }
 	
-	@Test
+	//@Test
 	public void validateTitleOfWiki(){
 		SeleniumMethods obj = new SeleniumMethods(driver);
 		obj.openURL(ConfigReader.getConfig("url"));
